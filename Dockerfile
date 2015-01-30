@@ -29,5 +29,6 @@ WORKDIR /app/
 ENV DOCKER_HOST unix:///tmp/docker.sock
 
 VOLUME ["/etc/nginx/certs"]
+VOLUME ["/etc/nginx/include"]
 
 CMD ["forego", "start", "-r"]
